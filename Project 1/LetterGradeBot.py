@@ -1,8 +1,16 @@
 # Letter Grade Bot
 
 pointsPossible = 37
-score = (int(input("What is your score?\n")))
-studentName = "Gabor"
+
+studentName = input("What's your name?\n")
+
+try:
+    score = int(input("What is your score?\n"))
+    print("Valid score!\n")
+except Exception:
+    print("You need to provide a valid score!")
+
+
 
 '''
 A - 100 - 90%
@@ -12,7 +20,12 @@ D - 69 - 60%
 F - 59 - 0%
 '''
 
-age = input("What's your age?\n")
+try:
+    age = int(input("What's your age?\n"))
+    print("Valid age!\n")
+except Exception:
+    print("You need to provide a valid age!")
+
 print("You are " + age + " years old.")
 
 print("Student name: " + studentName)
