@@ -1,26 +1,18 @@
-# Advanced parameters
+# Advanced Lists
+# Append, Insert, Update, Delete and length
 
+list = ["object1", "object2", "object3", "object4"]
 
-def madlib(name, verb, noun):
-    print(name + " was " + verb + " with a " + noun)
+list.append("last one")
 
-madlib(noun="cheese", name="Nick", verb="running")
+list.insert(1, "to the second")
 
-def addtwo(num1, num2):
-    total = num1 + num2
-    return total
-    print("Hello")
+# del(list[3])
+list.remove("object3")
 
-thenum = addtwo(3,6)
-print(thenum)
+list[1] = "object1+"
 
-def printtype(somekindofstuff):
-    if type(somekindofstuff) == str:
-        print("String")
-    elif type(somekindofstuff) == int:
-        print("Int")
-    elif type(somekindofstuff) == float:
-        print("Float")
+del(list[-1])
 
-
-printtype("")
+print(list)
+print(len(list))

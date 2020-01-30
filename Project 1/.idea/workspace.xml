@@ -20,11 +20,11 @@
         <entry file="file://$PROJECT_DIR$/LetterGradeBot.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="425">
-                <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+              <first_editor relative-caret-position="119">
+                <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               </first_editor>
-              <second_editor relative-caret-position="425">
-                <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <second_editor>
+                <caret lean-forward="true" />
               </second_editor>
             </state>
           </provider>
@@ -56,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -150,15 +150,15 @@
       <option name="presentableId" value="Default" />
       <updated>1580379112717</updated>
       <workItem from="1580379114125" duration="1709000" />
-      <workItem from="1580380844649" duration="6773000" />
+      <workItem from="1580380844649" duration="7423000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8482000" />
+    <option name="totallyTimeSpent" value="9132000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
@@ -202,11 +202,11 @@
     <entry file="file://$PROJECT_DIR$/LetterGradeBot.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="425">
-            <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           </first_editor>
-          <second_editor relative-caret-position="425">
-            <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <second_editor>
+            <caret lean-forward="true" />
           </second_editor>
         </state>
       </provider>
