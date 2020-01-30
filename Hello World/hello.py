@@ -1,7 +1,8 @@
-print("Hello World")
-age = 38
-print(age)
-age = 39
-print(age)
-pi = 3.14
-print(pi)
+text = """Triple quote 
+multi-line comment"""
+
+name = "Gabor"
+
+
+print(name)
+print(text)
