@@ -1,65 +1,27 @@
-# Hangman
+words = ["PoGo","Spange","Lie-Fi"]
+definitions = ["Slang for Pokemon Go","To collect spare change, either from couches, passerbys on the street or any numerous other ways and means","When your phone or tablet indicates that you are connected to a wireless network, however you are still unable to load webpages or use any internet services with your device"]
+cooldictionary = {}
+for i in range(len(words)):
+    cooldictionary[words[i]] = definitions[i]
 
-import time
+for word in cooldictionary.keys():
+    print(word)
 
-lives = 5
-stringword = "Apple"
-word = list(stringword.lower())
-guess = ["_"] * len(word)
-winner = False
-incorrectletters = []
+for item in cooldictionary.items():
+    print(item)
 
-def printscore():
-    global guess
-    print("Lives: " + str(lives))
-    print("Incorrect letters: ", end="")
-    for i in range(len(incorrectletters)):
-        if i == len(incorrectletters) - 1:
-            print(incorrectletters[i])
-        else:
-            print(incorrectletters[i] , end=", ")
-    print("")
-    for i in range(len(guess)):
-        if i == len(guess) - 1:
-            print(guess[i])
-        else:
-            print(guess[i] , end=", ")
-    print("")
+del(cooldictionary['PoGo'])
 
 
-def askforletter():
-    global guess
-    global word
-    letterguess = input("Please guess a letter!\n").lower()
-    correct = False
-    for x in range(len(word)):
-        if letterguess == word[x]:
-            guess[x] = letterguess
-            correct = True
-    if correct:
-        print("You got one!")
+dabools = [False, False, False, False, True, False, True, False, True, False, False, False, False, False, True, False, True, True, False, False, True, False, False, False, False, False, True, False, False, False, False, False, True, False, False, False, False, False, False, True, True, False, False, True, True, True, True, True, False, True, True, False, True, False, False, True, False, False, False, False, True, True, False, False, True, True, True, False, True, True, False, False, False, False, True, True, False, True, True, False, True, True, True, False, False, False, True, True, False, True, False, True, False, True, True, True, False, True, False, False, True, True, False, True, False, False, True, False, True, False, True, False, True, True, True, True, False, False, True, True, False, False, False, False, True, True, True, False, False, True, True, True, True, True, False, True, True, False, False, True, True, False, False, True, True, True, True, True, False, False, True, True, False, False, True, True, False, False, False, False, False, True, True, True, True, True, False, True, True, False, False, True, True, True, True, True, False, False, True, True, True, True, True, False, True, True, True, True, True, False, False, True, False, False, False, True, True, True, False, True, False, False, True, False, False, True, True, False, False, False, False, True, False, False, True, True, False, True, True, False, False, True, False, True, True, False, True, False, True, False, True, False, False, True, False, True, False, False, False, True, True, False, False, False, True, True, False, False, True, True, True, True, True, False, True, True, True, True, False, False, True, False, True, True, True, True, True, False, False, False, True, True, False, True, True, True, False, False, True, True, False, True, True, True, True, False, True, True, False, False, False, True, True, True, True, True, False, False, False, True, False, False, False, True, False, True, True, True, True, False, False, False, True, False, False, False, False, True, True, False, True, False, False, True, False, False, False, True, True, True, False, False, True, True, False, False, True, True, False, False, True, False, True, False, True, True, True, False, True, True, True, True, False, True, True, False, True, True, False, True, False, True, False, True, True, False, True, False, True, False, False, True, True, False, True, False, False, True, True, True, False, True, True, True, False, False, False, True, False, True, True, False, True, False, True, True, False, True, True, False, False, True, False, False, False, True, True, False, True, True, False, False, True, True, True, False, False, True, False, True, True, True, True, False, False, True, True, False, False, True, True, False, True, False, True, True, True, True, True, False, False, False, True, False, False, True, False, False, True, True, False, False, False, False, False, False, True, False, True, False, False, True, True, False, True, True, True, False, True, True, False, False, True, False, False, True, True, False, True, False, True, False, False, True, False, True, True, False, False, True, True, False, False, True, False, False, False, False, True, False]
+
+count = {True : 0, False : 0}
+
+for i in range(len(dabools)):
+    if dabools[i] == True:
+        count[True] += 1
     else:
-        print("oh no! That wasn't in there.")
-        incorrectletters.append(letterguess)
-        global lives
-        lives -= 1
-    time.sleep(1)
+        count[False] += 1
 
-def checkwinner():
-    if "_" not in guess:
-        global winner
-        winner = True
-
-
-while lives > 0 and not winner:
-    # Print out the current scoreboard
-    printscore()
-    # Ask the user for a letter
-    askforletter()
-    # Check if they won
-    checkwinner()
-
-if lives <= 0:
-    print("You lost! The word was " + str(word))
-else:
-    print("Congratulations! You won with " + str(lives) + " lives left!")
+print(count[True])
+print(count[False])
