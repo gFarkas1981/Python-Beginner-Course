@@ -1,39 +1,21 @@
-# Tuples (immutable lists)
+# While loops
 
-fixlist = ("fixelement1", 'fixelement2', "fixelement3")
+age = 38
 
+while age < 100:
+    print(age)
+    age += 1
 
-# fixlist.append
+steps = 1
+secretNumber = '8'
 
-print(fixlist)
+guess = input("Guess a number between 1 and 10!\n")
 
-shoes = ("Spizikes","Air Force 1","Curry 2","Melo 5")
+while guess != secretNumber:
+    steps += 1
+    if int(guess) < int(secretNumber):
+        guess = input("Enter a bigger number!\n")
+    else:
+        guess = input("Enter a smaller number!\n")
 
-def appendtotuple(thetuple, value):
-    newtuple =(*thetuple, value)
-    return newtuple
-
-appendtotuple(shoes, "Air max")
-
-# Sets
-
-newset = set(["Spizikes","Air Force 1","Air Force 1","Curry 2","Melo 5"])
-# only unique elements
-# there is no order in a set
-
-newset.add("Curry 2")
-
-numbers = [3, 2, 2, 4, 5, 5, 2, 4, 9, 3, 10, 10, 1, 5, 2, 10, 1, 9, 2]
-unique = set(numbers)
-
-odds = set()
-
-def selectodds(numbers):
-
-    for n in numbers:
-        if n % 2 != 0:
-            odds.add(n)
-
-    return odds
-
-selectodds(numbers)
+print("You win in " + str(steps) + " step's'")
