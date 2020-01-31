@@ -14,3 +14,6 @@ class Mustang(Car):
         self.year = year
         self.model = "Mustang"
         self.make = "Ford"
+
+car1 = Mustang(1977)
+print(car1.make)
