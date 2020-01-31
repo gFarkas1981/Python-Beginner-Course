@@ -25,3 +25,15 @@ newset.add("Curry 2")
 
 numbers = [3, 2, 2, 4, 5, 5, 2, 4, 9, 3, 10, 10, 1, 5, 2, 10, 1, 9, 2]
 unique = set(numbers)
+
+odds = set()
+
+def selectodds(numbers):
+
+    for n in numbers:
+        if n % 2 != 0:
+            odds.add(n)
+
+    return odds
+
+selectodds(numbers)
