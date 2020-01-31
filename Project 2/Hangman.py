@@ -1,19 +1,15 @@
-# inheritence
+# None
 
-class Car:
-    def __init__(self,year, make, model):
-        self.year = year
-        self.make = make
-        self.model = model
+def searchstring(search):
+    return None
 
-    def age(self):
-        return 2016 - self.year
+print(searchstring(""))
 
-class Mustang(Car):
-    def __init__(self, year):
-        self.year = year
-        self.model = "Mustang"
-        self.make = "Ford"
+def square(number):
+    if type(number) == float or type(number) == int:
+        return number ** 2
+    else:
+        return None
 
-car1 = Mustang(1977)
-print(car1.make)
+print(square(""))
+print(square(15))
