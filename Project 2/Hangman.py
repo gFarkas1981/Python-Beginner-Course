@@ -1,15 +1,7 @@
-# None
+# Import
 
-def searchstring(search):
-    return None
+from Hello import FunStuff
 
-print(searchstring(""))
+FunStuff().havefun()
 
-def square(number):
-    if type(number) == float or type(number) == int:
-        return number ** 2
-    else:
-        return None
 
-print(square(""))
-print(square(15))
