@@ -1,7 +1,9 @@
-# Import
+# File Creating, Reading and Writing
 
-from Hello import FunStuff
+file = open("fun.txt", "w")
 
-FunStuff().havefun()
+file.write("Hello my name is Gabor\nThis is my new file!")
 
+file = open("fun.txt", "r")
 
+print(file.read())
